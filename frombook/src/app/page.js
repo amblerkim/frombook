@@ -26,6 +26,7 @@ export default function Home() {
       >
         <SwiperSlide>
           <img src="/book1.svg"></img>
+          <br></br>
         </SwiperSlide>
         <SwiperSlide>
           <img src="/book2.svg"></img>
