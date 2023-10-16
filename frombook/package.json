@@ -1,0 +1,30 @@
+{
+  "name": "frombook",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.12",
+    "antd": "^5.9.4",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "swiper": "^10.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.2",
+    "@types/react": "18.2.24",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
+  }
+}

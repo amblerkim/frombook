@@ -1,0 +1,38 @@
+"use client";
+import Link from "next/link";
+import { useParams, useRouter } from "next/navigation";
+
+export function Control() {
+  const params = useParams();
+  const router = useRouter();
+  const id = params.id;
+  return (
+    <ul>
+      <li>
+        <Link href="/create">글쓰기</Link>
+      </li>
+      {id ? (
+        <>
+          <li>
+            <Link href={"/update/" + id}>수정하기</Link>
+          </li>
+          <li>
+            <input
+              type="button"
+              value="delete"
+              onClick={() => {
+                const option = { method: "DELETE" };
+                fetch(process.env.NEXT_PUBLIC_API_URL + "topics/" + id, option)
+                  .then((resp) => resp.json())
+                  .then((result) => {
+                    router.push(`/`);
+                    router.refresh();
+                  });
+              }}
+            />
+          </li>
+        </>
+      ) : null}
+    </ul>
+  );
+}
