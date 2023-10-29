@@ -90,9 +90,6 @@ export const getYourBookReviewList = [
   },
 ];
 
-// export const getBookSearchList = [
-//     {
+export const getBookSearchList = [{}];
 
-//     },
-
-// ]
+export const getBookSearchListTest = [{}];
