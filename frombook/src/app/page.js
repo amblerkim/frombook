@@ -14,6 +14,7 @@ export default function Home() {
   return (
     <>
       <h2>01. 기록의 방</h2>
+      <img src="/ck_cm08180149-1.jpeg" alt="" />
 
       <Swiper
         slidesPerView={3}
