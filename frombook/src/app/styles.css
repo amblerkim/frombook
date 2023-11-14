@@ -8,7 +8,10 @@
   }
   
   body {
-    background: #eee;
+    background: url(/background.jpeg);
+    background-position: top center;
+    background-size: cover;
+
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;

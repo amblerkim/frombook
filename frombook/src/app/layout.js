@@ -18,6 +18,8 @@ export default async function RootLayout({ children }) {
         <h1>
           <Link href="/">from.</Link>
         </h1>
+        <object data="/line.svg"></object>
+
         <h2>안녕하세요. 박소영님 오늘은 50번 째 기록 입니다.</h2>
 
         <ol>
