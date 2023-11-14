@@ -21,13 +21,14 @@ export default async function RootLayout({ children }) {
         <h2>안녕하세요. 박소영님 오늘은 50번 째 기록 입니다.</h2>
 
         <ol>
-          {topics.map((topic) => {
-            return (
-              <li key={topic.id}>
-                <Link href={`/read/${topic.id}`}>{topic.title}</Link>
-              </li>
-            );
-          })}
+          {topics &&
+            topics.map((topic) => {
+              return (
+                <li key={topic.id}>
+                  <Link href={`/read/${topic.id}`}>{topic.title}</Link>
+                </li>
+              );
+            })}
         </ol>
         {children}
         <Control />
