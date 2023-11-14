@@ -1,11 +1,5 @@
 {
-  "topics": [
-    {
-      "title": "Test1",
-      "body": "Test1 is ... ",
-      "id": 1
-    }
-  ],
+  "topics": [],
   "posts": [
     {
       "id": 1,
