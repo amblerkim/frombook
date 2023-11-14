@@ -16,11 +16,15 @@ export default async function RootLayout({ children }) {
     <html>
       <body>
         <h1>
-          <Link href="/">from.</Link>
+          <Link href="/">
+            <p class="text-[26px] text-center text-[#222]">From.</p>
+          </Link>
         </h1>
-        <object data="/line.svg"></object>
+        <object data="/line.svg" />
 
+        <object data="/icon_1_comment.svg" type="image/svg+xml" />
         <h2>안녕하세요. 박소영님 오늘은 50번 째 기록 입니다.</h2>
+        <object data="/line.svg" />
 
         <ol>
           {topics &&
