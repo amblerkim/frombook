@@ -14,6 +14,7 @@ import { Pagination } from "swiper/modules";
 export default function Home() {
   return (
     <>
+      <div class="search_bar"></div>
       <h2>01. 기록의 방</h2>
       <Swiper
         slidesPerView={3}
