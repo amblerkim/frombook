@@ -1,5 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "/Users/hanseopkim/FROMBOOK/frombook/src/app/data/googleBooksJson.js";
 
 // Import Swiper styles
 import "swiper/css";
@@ -14,8 +15,6 @@ export default function Home() {
   return (
     <>
       <h2>01. 기록의 방</h2>
-      <img src="/ck_cm08180149-1.jpeg" alt="" />
-
       <Swiper
         slidesPerView={3}
         spaceBetween={15}
@@ -30,7 +29,9 @@ export default function Home() {
           <br></br>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/book2.svg"></img>
+          <a href="/">
+            <img src="/book2.svg"></img>
+          </a>
         </SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
