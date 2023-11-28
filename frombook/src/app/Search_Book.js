@@ -6,6 +6,7 @@ export function Search_Book() {
     <div class="container">
       <div class="Search_Book">
         {/* w-[335px] h-[50px] rounded-[18px] bg-[#0d0f14] */}
+        for search
       </div>
     </div>
   );

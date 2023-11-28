@@ -11,41 +11,19 @@ import "./styles.css";
 // import required modules
 import { Pagination } from "swiper/modules";
 
+// read on picture by clicking picture
+import Link from "next/link";
+import { useParams, useRouter } from "next/navigation";
+
 export default function Home() {
+  const params = useParams();
+  const router = useRouter();
+  const id = params.id;
   return (
     <>
-      <div class="search_bar"></div>
-      <h2>01. 기록의 방</h2>
+      <h2>01. 나만의 기록</h2>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={15}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="/book1.svg"></img>
-          <br></br>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="/">
-            <img src="/book2.svg"></img>
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-      </Swiper>
-
-      <br />
-      <br />
-
-      <h2>02. 독자의 방</h2>
-
-      <Swiper
-        slidesPerView={3}
+        slidesPerView={5}
         spaceBetween={15}
         pagination={{
           clickable: true,
@@ -62,6 +40,35 @@ export default function Home() {
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+      </Swiper>
+
+      <br />
+      <br />
+
+      <h2>02. 타인의 기록</h2>
+
+      <Swiper
+        slidesPerView={5}
+        spaceBetween={15}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src="/book1.svg"></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/book2.svg"></img>
+        </SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
       </Swiper>
     </>
   );

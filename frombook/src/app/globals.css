@@ -30,18 +30,22 @@ a:hover {
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .title_2 {
-    justify-content: center;
     display : flex;
+    justify-content: center;
+    align-items: auto;
     flex: auto;
     flex-direction : row;
 }
 
 .Search_Book {
+    margin-top : 1%;
     display: flex;
     justify-content: center;
+    align-items: center;
     /* flex-direction: column; 
     flex: 1;
     width: 100%;
