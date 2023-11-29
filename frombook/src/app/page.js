@@ -20,8 +20,10 @@ export default function Home() {
   const router = useRouter();
   const id = params.id;
   return (
-    <>
-      <h2>01. 나만의 기록</h2>
+    <div>
+      <object data="/line.svg" />
+      <p>01. 나만의 기록</p>
+      <object data="/line.svg" />
       <Swiper
         slidesPerView={5}
         spaceBetween={15}
@@ -47,7 +49,9 @@ export default function Home() {
       <br />
       <br />
 
-      <h2>02. 타인의 기록</h2>
+      <object data="/line.svg" />
+      <p>02. 타인의 기록</p>
+      <object data="/line.svg" />
 
       <Swiper
         slidesPerView={5}
@@ -70,6 +74,6 @@ export default function Home() {
         <SwiperSlide>Slide 6</SwiperSlide>
         <SwiperSlide>Slide 7</SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
