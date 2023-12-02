@@ -10,8 +10,6 @@ import "./styles.css";
 
 // import required modules
 import { Pagination } from "swiper/modules";
-
-// read on picture by clicking picture
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 
@@ -24,8 +22,9 @@ export default function Home() {
       <object data="/line.svg" />
       <p>01. 나만의 기록</p>
       <object data="/line.svg" />
+
       <Swiper
-        slidesPerView={5}
+        slidesPerView="auto"
         spaceBetween={15}
         pagination={{
           clickable: true,
@@ -33,8 +32,10 @@ export default function Home() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img src="/book1.svg"></img>
+        <SwiperSlide onClick={() => console.log("click")}>
+          <div>
+            <img src="/book1.svg"></img>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src="/book2.svg"></img>
@@ -54,7 +55,7 @@ export default function Home() {
       <object data="/line.svg" />
 
       <Swiper
-        slidesPerView={5}
+        slidesPerView="auto"
         spaceBetween={15}
         pagination={{
           clickable: true,
