@@ -11,12 +11,8 @@ import "./styles.css";
 // import required modules
 import { Pagination } from "swiper/modules";
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
 
 export default function Home() {
-  const params = useParams();
-  const router = useRouter();
-  const id = params.id;
   return (
     <div>
       <object data="/line.svg" />
@@ -32,17 +28,17 @@ export default function Home() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide onClick={() => console.log("click")}>
+        <SwiperSlide onClick={() => console.log("click1")}>
           <div>
             <img src="/book1.svg"></img>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide onClick={() => console.log("click2")}>
           <img src="/book2.svg"></img>
         </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide onClick={() => console.log("click3")}>Slide 3</SwiperSlide>
+        <SwiperSlide onClick={() => console.log("click4")}>Slide 4</SwiperSlide>
+        <SwiperSlide onClick={() => console.log("click5")}>Slide 5</SwiperSlide>
         <SwiperSlide>Slide 6</SwiperSlide>
         <SwiperSlide>Slide 7</SwiperSlide>
       </Swiper>
